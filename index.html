@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Survey Form</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <header class="header">
+        <h1 id="title" class="text-center">Survey Form</h1>
+        <p id="description" class="description-text-center">
+          Please fill in the form below
+        </p>
+      </header>
+      <main>
+        <form id="survey-form">
+          <div class="form-group">
+            <label id="name-label" for="name">Name</label>
+            <input
+              type="text"
+              name="name"
+              id="name"
+              class="form-control"
+              placeholder="Enter your name"
+              required
+            />
+          </div>
+          <div class="form-group">
+            <label id="email-label" for="email">Email</label>
+            <input
+              type="email"
+              name="email"
+              id="email"
+              class="form-control"
+              placeholder="Enter your email"
+              required
+            />
+          </div>
+          <div class="form-group">
+            <label id="number-label" for="name">
+              Age <span class="clue">(optional)</span>
+            </label>
+            <input
+              type="number"
+              name="age"
+              id="number"
+              class="form-control"
+              min="10"
+              max="99"
+              placeholder="Enter your age"
+              required
+            />
+          </div>
+          <div class="form-group">
+            <p>Choose your graduate:</p>
+            <select id="dropdown" name="graduate" class="form-control">
+              <option disabled selected value="">Select an option</option>
+              <option value="elementary">Elementary School</option>
+              <option value="junior">Junior High School</option>
+              <option value="senior">Senior High School</option>
+              <option value="college">College</option>
+            </select>
+          </div>
+          <div class="form-group gender">
+            <p>Choose your gender:</p>
+            <label for="male">
+              <input
+                type="radio"
+                name="gender"
+                id="male"
+                class="input-radio"
+                value="male"
+                checked
+              />
+              Male
+            </label>
+            <label for="female">
+              <input
+                type="radio"
+                name="gender"
+                id="female"
+                class="input-radio"
+                value="female"
+              />
+              Female
+            </label>
+          </div>
+          <div class="form-group">
+            <p>Current job</p>
+            <select id="job" name="job" class="form-control" required>
+              <option disabled selected value="">Select an option</option>
+              <option value="noworking">Not Working</option>
+              <option value="frontend">Frontend Developer</option>
+              <option value="backend">Backend Developer</option>
+              <option value="mobile">Mobile Developer</option>
+              <option value="data">Data Analyst</option>
+            </select>
+          </div>
+          <div class="form-group know">
+            <p>
+              Do you know this from? <span class="clue">(Check option)</span>
+            </p>
+            <label for="github">
+              <input
+                type="checkbox"
+                name="know"
+                id="github"
+                class="input-checkbox"
+                value="github"
+              />
+              Github
+            </label>
+            <label for="linkedin">
+              <input
+                type="checkbox"
+                name="know"
+                id="linkedin"
+                class="input-checkbox"
+                value="linkedin"
+              />
+              LinkedIn
+            </label>
+            <label for="telegram">
+              <input
+                type="checkbox"
+                name="know"
+                id="telegram"
+                class="input-checkbox"
+                value="telegram"
+              />
+              Telegram
+            </label>
+            <label for="internet">
+              <input
+                type="checkbox"
+                name="know"
+                id="internet"
+                class="input-checkbox"
+                value="internet"
+              />
+              Internet
+            </label>
+          </div>
+          <div class="form-group">
+            <p>Any comments or suggestions?</p>
+            <textarea
+              id="comments"
+              class="input-textarea"
+              name="comments"
+              placeholder="Enter your comment here"
+            ></textarea>
+          </div>
+          <div class="form-group">
+            <button type="submit" id="submit" class="submit-button">
+              Submit
+            </button>
+          </div>
+        </form>
+      </main>
+    </div>
+  </body>
+</html>
